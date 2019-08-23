@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AzureFunctionsVersion>v2</AzureFunctionsVersion>
+    <AssemblyName>hotcho3</AssemblyName>
+    <RootNamespace>hotcho3</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="HotChocolate" Version="10.0.1" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="10.0.1" />
+    <PackageReference Include="HotChocolate.AspNetCore.Playground" Version="10.0.1" />
+    <PackageReference Include="HotChocolate.AspNetCore.Voyager" Version="10.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.0.0" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.29" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+</Project>
